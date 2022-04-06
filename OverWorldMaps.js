@@ -23,6 +23,7 @@ window.OverworldMaps = {
         gameObjects: {
             // placement of the heroSSs
             hero: new Person({
+                isPlayerControlled: true,
                 x: utils.withGrid(5),
                 y: utils.withGrid(6),
             }),
