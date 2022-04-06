@@ -8,22 +8,44 @@ class OverworldMap {
 
     }
     drawLowerImage(ctx){
-        ctx.drawImage(this.LowerImage,0 , 0)
+        ctx.drawImage(this.LowerImage,-20 , -20, 200, 200)
     }
     drawUpperImage(ctx){
         ctx.drawImage(this.UpperImage, 0, 0)
     }
 }
 window.OverworldMaps = {
-    demoRoom:{
-        // les 9 maps et src seront ici 
-        LowerSrc: "",
-        upperSrc: "",
+     // les 9 maps et src seront ici 
+    demoRoom:{       
+        LowerSrc: "/images/maps/DemoLower.png",
+        upperSrc: "/images/maps/DemoUpper.png",
 
         gameObjects: {
+            // placement of the heroSSs
+            hero: new Person({
+                x: utils.withGrid(5),
+                y: utils.withGrid(6),
+            }),
+            // placement of the npc
+            
+        }
+    },
+    // new maps
+    othermaps:{       
+        LowerSrc: "/images/maps/KitchenLower.png",
+        upperSrc: "/images/maps/KitchenUpper.png",
+
+        gameObjects: {
+            // placement of the hero
             hero: new GameObject({
-                x: 5,
-                y: 7,
+                x: 3,
+                y: 1,
+            }),
+            // placement of the npc
+            npc1: new GameObject({
+                x:9,
+                y:1,
+                src: "/images/characters/people/npc1.png"
             })
         }
     }
