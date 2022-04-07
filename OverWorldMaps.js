@@ -8,7 +8,7 @@ class OverworldMap {
 
     }
     drawLowerImage(ctx){
-        ctx.drawImage(this.LowerImage,-20 , -20, 200, 200)
+        ctx.drawImage(this.LowerImage, 0, 0, 400, 400)
     }
     drawUpperImage(ctx){
         ctx.drawImage(this.UpperImage, 0, 0)
@@ -17,7 +17,7 @@ class OverworldMap {
 window.OverworldMaps = {
      // les 9 maps et src seront ici 
     demoRoom:{       
-        LowerSrc: "/images/maps/DemoLower.png",
+        LowerSrc: "/images/maps/map.png",
         upperSrc: "/images/maps/DemoUpper.png",
 
         gameObjects: {
