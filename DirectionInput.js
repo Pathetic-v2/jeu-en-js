@@ -3,13 +3,13 @@ class DirectionInput {
         this.helfDirection = [];
 
         this.map = {
-            "keyW": "up",
+            "KeyW": "up",
             "ArrowUp": "up" ,
-            "keyS": "down",
+            "KeyS": "down",
             "ArrowDown": "down",
-            "keyQ": "left",
+            "KeyA": "left",
             "ArrowLeft": "left",
-            "keyD": "right",
+            "KeyD": "right",
             "ArrowRight": "right",                 
         }
     }
